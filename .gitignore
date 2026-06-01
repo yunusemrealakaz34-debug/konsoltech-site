@@ -3,3 +3,7 @@ Thumbs.db
 *.log
 __pycache__/
 *.pyc
+
+# İç strateji notları — public repoda olmasın
+REKLAM-PLANI.md
+TASIMA-NOTLARI.md

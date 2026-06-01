@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://konsoltech.tr/sitemap.xml
+Sitemap: https://playstationtamir.com/sitemap.xml

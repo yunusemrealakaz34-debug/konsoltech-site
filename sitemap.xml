@@ -1,47 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://konsoltech.tr/</loc>
+    <loc>https://playstationtamir.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://konsoltech.tr/hizmetler.html</loc>
+    <loc>https://playstationtamir.com/hizmetler</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://konsoltech.tr/paketler.html</loc>
+    <loc>https://playstationtamir.com/paketler</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://konsoltech.tr/surec.html</loc>
+    <loc>https://playstationtamir.com/surec</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://konsoltech.tr/neden-biz.html</loc>
+    <loc>https://playstationtamir.com/neden-biz</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://konsoltech.tr/sss.html</loc>
+    <loc>https://playstationtamir.com/sss</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://konsoltech.tr/iletisim.html</loc>
+    <loc>https://playstationtamir.com/iletisim</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://konsoltech.tr/gizlilik.html</loc>
+    <loc>https://playstationtamir.com/gizlilik</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://konsoltech.tr/kvkk.html</loc>
+    <loc>https://playstationtamir.com/kvkk</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://playstationtamir.com/veri-silme</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

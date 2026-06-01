@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sayfa Bulunamadı (404) | KonsolTech</title>
+<meta name="robots" content="noindex, follow">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#060E1F">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/styles.css">
+
+<style>
+  .kt-404 {
+    min-height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background:
+      radial-gradient(circle at 50% 30%, rgba(0,168,255,.14), transparent 60%),
+      linear-gradient(180deg, #060E1F, #030814);
+  }
+  .kt-404 .code {
+    font-size: clamp(90px, 18vw, 180px);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -4px;
+    background: var(--kt-gradient);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+  }
+  .kt-404 h1 { font-weight: 800; font-size: clamp(24px,4vw,34px); margin-bottom: 14px; color:#fff; }
+  .kt-404 p { color: var(--kt-body); max-width: 520px; margin: 0 auto 30px; font-size: 16px; line-height: 1.6; }
+  .kt-404 .btns { display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="kt-nav navbar navbar-expand-lg">
+  <div class="container">
+    <a class="kt-brand" href="/index.html"><span>K</span>onsolTech</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ktNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="ktNav">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Anasayfa</a></li>
+        <li class="nav-item"><a class="nav-link" href="/hizmetler.html">Hizmetler</a></li>
+        <li class="nav-item"><a class="nav-link" href="/paketler.html">Paketler</a></li>
+        <li class="nav-item"><a class="nav-link" href="/surec.html">Süreç</a></li>
+        <li class="nav-item"><a class="nav-link" href="/sss.html">SSS</a></li>
+        <li class="nav-item"><a class="nav-link" href="/iletisim.html">İletişim</a></li>
+        <li class="nav-item"><a class="kt-cta-nav nav-link" href="https://wa.me/905454562041" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Hemen Yaz</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="kt-404">
+  <div>
+    <div class="code">404</div>
+    <h1>Bu sayfa drift yapmış olmalı.</h1>
+    <p>Aradığın sayfa taşınmış ya da hiç var olmamış olabilir. Merak etme — kolun derdi neyse, doğru yer bir tık uzakta.</p>
+    <div class="btns">
+      <a href="/index.html" class="kt-btn-primary"><i class="bi bi-house-fill"></i> Anasayfaya Dön</a>
+      <a href="https://wa.me/905454562041" class="kt-btn-ghost" target="_blank" rel="noopener" style="margin-left:0;"><i class="bi bi-whatsapp"></i> WhatsApp'tan Yaz</a>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
