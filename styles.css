@@ -2179,3 +2179,110 @@ select:focus-visible {
 .kt-guide-cta .t { font-weight: 700; color: #fff; font-size: 17px; }
 .kt-guide-cta .s { color: var(--kt-muted); font-size: 14px; margin-top: 3px; }
 .kt-guide-cta .kt-btn-primary { white-space: nowrap; }
+
+
+/* ============================================================
+   ÖZEL SERİ KASA DEĞİŞİMİ — paketler.html
+   ============================================================ */
+.kt-edition-sec { padding-top: 8px; }
+.kt-edition-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-top: 14px;
+}
+.kt-edition {
+  --ed: #00A8FF;
+  --ed-soft: rgba(0,168,255,.16);
+  background: var(--kt-surface);
+  border: 1px solid var(--kt-border);
+  border-radius: 22px;
+  padding: 24px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform .2s, border-color .2s, box-shadow .2s;
+}
+.kt-edition:hover {
+  transform: translateY(-5px);
+  border-color: var(--ed);
+  box-shadow: 0 22px 55px rgba(0,0,0,.45);
+}
+.kt-ed-blue { --ed: #00A8FF; --ed-soft: rgba(0,168,255,.16); }
+.kt-ed-red  { --ed: #FF5A5F; --ed-soft: rgba(255,90,95,.16); }
+.kt-ed-gold { --ed: #F5A623; --ed-soft: rgba(245,166,35,.16); }
+
+.kt-ed-tag {
+  position: absolute;
+  top: -13px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--ed);
+  color: #fff;
+  font-size: 11.5px; font-weight: 800;
+  letter-spacing: .7px; text-transform: uppercase;
+  padding: 7px 20px;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 8px 22px rgba(0,0,0,.35);
+}
+.kt-ed-gold .kt-ed-tag { color: #1a1206; }
+
+.kt-ed-img {
+  background: linear-gradient(160deg, #f5f8fc, #dde6f1);
+  border-radius: 16px;
+  aspect-ratio: 16 / 11;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  margin: 12px 0 18px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.5);
+}
+.kt-ed-img img { width: 88%; height: 88%; object-fit: contain; display: block; }
+.kt-ed-img.no-img img { display: none; }
+.kt-ed-img.no-img::after {
+  content: "\F2DA";   /* bi-controller */
+  font-family: "bootstrap-icons";
+  font-size: 58px;
+  color: rgba(6,14,31,.18);
+}
+
+.kt-edition h3 {
+  color: var(--ed);
+  font-size: 22px; font-weight: 800;
+  margin: 0 0 8px;
+}
+.kt-ed-desc {
+  color: var(--kt-body);
+  font-size: 14px; line-height: 1.6;
+  margin: 0 0 18px;
+  min-height: 44px;
+}
+.kt-ed-features {
+  list-style: none; padding: 0;
+  margin: 0 0 22px;
+  display: flex; flex-direction: column; gap: 11px;
+}
+.kt-ed-features li {
+  display: flex; align-items: flex-start; gap: 9px;
+  color: var(--kt-body); font-size: 14px; line-height: 1.4;
+}
+.kt-ed-features i { color: var(--ed); font-size: 16px; margin-top: 1px; flex: 0 0 auto; }
+
+.kt-ed-cta {
+  margin-top: auto;
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  background: var(--ed);
+  color: #fff;
+  font-weight: 800; font-size: 16px;
+  padding: 16px;
+  border-radius: 14px;
+  text-decoration: none;
+  box-shadow: 0 10px 26px var(--ed-soft);
+  transition: filter .18s, transform .18s;
+}
+.kt-ed-gold .kt-ed-cta { color: #1a1206; }
+.kt-ed-cta:hover { filter: brightness(1.08); transform: translateY(-2px); }
+.kt-ed-blue .kt-ed-cta:hover, .kt-ed-red .kt-ed-cta:hover { color: #fff; }
+
+@media (max-width: 900px) {
+  .kt-edition-grid { grid-template-columns: 1fr; max-width: 440px; margin-left: auto; margin-right: auto; }
+}
