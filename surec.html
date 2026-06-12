@@ -181,7 +181,7 @@
         <i class="bi bi-truck"></i> Aras Kargo Anlaşma Kodu
       </div>
       <div class="kt-cargo-code-value" id="ktCargoCode">260 480 565 15 34</div>
-      <button class="kt-cargo-copy" onclick="ktCopyCargoCode()">
+      <button class="kt-cargo-copy" type="button">
         <i class="bi bi-clipboard"></i> <span id="ktCopyText">Kodu Kopyala</span>
       </button>
       <p class="kt-cargo-note">Aras Kargo şubesinde bu kodu söyle, sen ödeme yapma. KonsolTech alıcı tarafında ücreti kapatır.</p>
@@ -499,6 +499,8 @@ function ktCopyCargoCode() {
     setTimeout(function() { txt.textContent = 'Kodu Kopyala'; }, 2000);
   }
 }
+var ktCopyBtn = document.querySelector('.kt-cargo-copy');
+if (ktCopyBtn) ktCopyBtn.addEventListener('click', ktCopyCargoCode);
 </script>
 <script src="script.js" defer></script>
 </body>
