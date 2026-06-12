@@ -7,3 +7,6 @@ __pycache__/
 # İç strateji notları — public repoda olmasın
 REKLAM-PLANI.md
 TASIMA-NOTLARI.md
+
+# Sıkıştırma öncesi orijinal görsel yedekleri — repoya girmesin
+images/originals-backup/
