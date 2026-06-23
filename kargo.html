@@ -23,6 +23,29 @@
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <meta name="theme-color" content="#060E1F">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Anasayfa", "item": "https://playstationtamir.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Kargo", "item": "https://playstationtamir.com/kargo"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Tamir için Konsol / Kol Kargoyla Gönderme",
+  "step": [
+    {"@type": "HowToStep", "position": 1, "name": "WhatsApp'tan Yaz", "text": "Önce onay al, sonra yolla. WhatsApp'tan sorununu yaz."},
+    {"@type": "HowToStep", "position": 2, "name": "Paketle", "text": "Köpükle sar, ad-telefon-arıza-iade adresi yazılı kâğıdı kutuya koy."},
+    {"@type": "HowToStep", "position": 3, "name": "Aras'a Götür", "text": "Aras şubesinde anlaşma kodunu söyle — sen ödeme yapma, ücreti KonsolTech karşılar."}
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -33,13 +56,13 @@
 
 <body>
 
-<!-- Top SEO Strip -->
+<!-- Marquee -->
 <div class="kt-marquee" aria-hidden="true">
   <div class="kt-marquee-track">
     <span><b>★</b> Türkiye Geneli Kargo — Ücreti Bizden</span>
     <span><b>•</b> Aras Anlaşmalı · Sen Ödeme Yapma</span>
-    <span><b>•</b> Sigortalı Gönderim</span>
-    <span><b>•</b> 3 Adımda Kolay</span>
+    <span><b>•</b> Sigortalı + Takipli Gönderim</span>
+    <span><b>•</b> Çift Yön Anlaşma — Dönüş de Bizden</span>
     <span><b>★</b> Gamer'a Gamer Hizmeti</span>
     <span><b>•</b> WhatsApp'tan 5 Dakikada Dönüş</span>
   </div>
@@ -59,6 +82,7 @@
         <li class="nav-item"><a class="nav-link" href="paketler.html">Paketler</a></li>
         <li class="nav-item"><a class="nav-link" href="konsol-alim.html">Konsol Alımı</a></li>
         <li class="nav-item"><a class="nav-link active" href="kargo.html" aria-current="page">Kargo</a></li>
+        <li class="nav-item"><a class="nav-link" href="surec.html">Süreç</a></li>
         <li class="nav-item"><a class="nav-link" href="sss.html">SSS</a></li>
         <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
         <li class="nav-item"><a class="kt-cta-nav nav-link" href="https://wa.me/905454562041" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Hemen Yaz</a></li>
@@ -67,78 +91,187 @@
   </div>
 </nav>
 
-<!-- KARGO HERO -->
+<!-- PAGE HERO -->
 <section id="main" class="kt-page-hero">
-  <div class="container kt-page-hero-inner" style="text-align:left;">
-    <div class="kt-pill" style="margin-bottom:14px;"><span class="pulse"></span> Türkiye Geneli Kargo</div>
-    <h1 style="text-align:left;">Kolunu <span class="grad">3 Adımda</span> Yolla</h1>
-    <p class="lead" style="margin-left:0;">Kargo ücreti bizden — sen sadece paketle ve şubeye götür. Türkiye'nin her yerinden, sigortalı.</p>
+  <div class="container kt-page-hero-inner">
+    <div class="kt-breadcrumb">
+      <a href="index.html"><i class="bi bi-house-fill"></i> Anasayfa</a>
+      <i class="bi bi-chevron-right" style="font-size: 11px;"></i>
+      <span>Kargo</span>
+    </div>
+    <h1>Kolunu <span class="grad">3 Adımda</span> Yolla.</h1>
+    <p class="lead">Kargo ücreti bizden — sen sadece paketle ve şubeye götür. Türkiye'nin her yerinden, sigortalı + takipli.</p>
   </div>
 </section>
 
 <!-- 3 ADIM -->
-<section class="kt-section" style="padding-top:8px;">
+<section class="kt-section kt-process">
   <div class="container">
-    <div class="kt-ship-steps">
-      <div class="kt-ship-step">
-        <div class="kt-ship-top"><span class="kt-ship-num">1</span><i class="bi bi-chat-dots-fill"></i></div>
-        <h3>WhatsApp'tan Yaz</h3>
-        <p>Önce <b>onay al</b>, sonra yolla.</p>
-      </div>
-      <div class="kt-ship-step">
-        <div class="kt-ship-top"><span class="kt-ship-num">2</span><i class="bi bi-box-seam-fill"></i></div>
-        <h3>Paketle</h3>
-        <p>Köpükle sar, <b>kâğıt koy</b>.</p>
-      </div>
-      <div class="kt-ship-step">
-        <div class="kt-ship-top"><span class="kt-ship-num">3</span><i class="bi bi-truck"></i></div>
-        <h3>Aras'a Götür</h3>
-        <p><b>Kodu söyle</b>, sen ödeme yok.</p>
-      </div>
-    </div>
-
-    <!-- Kutuya kağıt koy -->
-    <div class="kt-ship-note">
-      <span class="kt-ship-note-lbl"><i class="bi bi-card-text"></i> Kutuya kâğıt koy:</span>
-      <span class="kt-ship-chip">Ad Soyad</span>
-      <span class="kt-ship-chip">Telefon</span>
-      <span class="kt-ship-chip">Arıza</span>
-      <span class="kt-ship-chip">İade Adresin</span>
-    </div>
-
-    <!-- Aras kod -->
-    <div class="kt-ship-code">
-      <div class="kt-ship-code-main">
-        <div class="kt-ship-code-lbl"><i class="bi bi-truck"></i> Aras Kargo Anlaşma Kodu</div>
-        <div class="kt-ship-code-num">260 480 565 15 34</div>
-        <div class="kt-ship-code-sub">Şubede bu kodu söyle. <b>Ücreti KonsolTech karşılar.</b></div>
-      </div>
-      <div class="kt-ship-free">
-        <div class="kt-ship-free-big">ÜCRETSİZ</div>
-        <div class="kt-ship-free-sub">SEN ÖDEME YAPMA</div>
-      </div>
-    </div>
-
-    <!-- Adres + WhatsApp -->
-    <div class="kt-ship-bottom">
-      <div class="kt-ship-addr">
-        <i class="bi bi-geo-alt-fill"></i>
-        <div>
-          <div class="kt-ship-addr-lbl">Teslim Adresi (Alıcı)</div>
-          <div class="kt-ship-addr-name">Yunus Emre Alakaz / KonsolTech</div>
-          <div class="kt-ship-addr-line">Kavaklı Mah. Kocatepe Cad. No: 319/6C · Beylikdüzü / İstanbul</div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="kt-step">
+          <div class="kt-step-num">1</div>
+          <h4>WhatsApp'tan Yaz</h4>
+          <p>Önce onay al, sonra yolla. Sorununu yaz, gönderimi birlikte onaylayalım — boşuna kargo yok.</p>
         </div>
       </div>
-      <a class="kt-ship-wa" href="https://wa.me/905454562041?text=Merhaba%2C%20cihaz%C4%B1m%C4%B1%20tamir%20i%C3%A7in%20kargoyla%20g%C3%B6ndermek%20istiyorum.%20Ar%C4%B1za%3A%20" target="_blank" rel="noopener">
-        <i class="bi bi-whatsapp"></i>
-        <div><div class="kt-ship-wa-lbl">Önce Buradan Yaz</div><div class="kt-ship-wa-num">0545 456 2041</div></div>
-      </a>
+      <div class="col-md-6 col-lg-4">
+        <div class="kt-step">
+          <div class="kt-step-num">2</div>
+          <h4>Paketle</h4>
+          <p>Köpükle sar, darbeye karşı sıkı sar. Ad, telefon, arıza ve iade adresi yazılı kâğıdı kutuya koy.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="kt-step">
+          <div class="kt-step-num">3</div>
+          <h4>Aras'a Götür</h4>
+          <p>Şubede anlaşma kodumuzu söyle — sen ödeme yapma. Kargo ücretini KonsolTech karşılar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARAS KARGO ANLAŞMASI -->
+<section class="kt-section" id="kargo" style="padding-top:0;">
+  <div class="container" style="max-width: 1100px;">
+    <div class="kt-section-title">
+      <div class="eyebrow">Anlaşmalı Aras Kargo</div>
+      <h2>Sen Ödeme Yapma. <span style="background: var(--kt-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Kodu Ver, Yolla.</span></h2>
+      <p>Aras Kargo ile özel anlaşmamız var. Anlaşma kodumuzu kuryeye söyle — kargo ücreti bizden, kolu sen yollat. Türkiye'nin her yerinden, sigortalı + takipli.</p>
     </div>
 
-    <p class="text-center mt-4" style="color:var(--kt-muted);font-size:13.5px;">
-      <i class="bi bi-shield-check me-1" style="color:var(--kt-cyan);"></i>
-      Gönderdiğin cihaz sigortalıdır · Şehir içi elden teslim için <a href="iletisim.html" style="color:var(--kt-blue-hi);">atölye konumu →</a>
-    </p>
+    <!-- Agreement Code Card -->
+    <div class="kt-cargo-code-card">
+      <div class="kt-cargo-code-label">
+        <i class="bi bi-truck"></i> Aras Kargo Anlaşma Kodu
+      </div>
+      <div class="kt-cargo-code-value" id="ktCargoCode">260 480 565 15 34</div>
+      <button class="kt-cargo-copy" type="button">
+        <i class="bi bi-clipboard"></i> <span id="ktCopyText">Kodu Kopyala</span>
+      </button>
+      <p class="kt-cargo-note">Aras Kargo şubesinde bu kodu söyle, sen ödeme yapma. KonsolTech alıcı tarafında ücreti kapatır.</p>
+    </div>
+
+    <!-- Address & Contact -->
+    <div class="row g-4 mt-4">
+      <div class="col-md-6">
+        <div class="kt-contact-card">
+          <h3><i class="bi bi-geo-alt-fill" style="color: var(--kt-cyan);"></i> Teslim Adresi</h3>
+          <ul class="kt-contact-info">
+            <li>
+              <div class="ico"><i class="bi bi-person-fill"></i></div>
+              <div>
+                <div class="lbl">Alıcı</div>
+                <span class="val">Yunus Emre Alakaz / KonsolTech</span>
+              </div>
+            </li>
+            <li>
+              <div class="ico"><i class="bi bi-house-door-fill"></i></div>
+              <div>
+                <div class="lbl">Adres</div>
+                <span class="val" style="line-height: 1.6;">Kavaklı Mahallesi Kocatepe Caddesi<br>No: 319/6C<br>Beylikdüzü / İstanbul</span>
+              </div>
+            </li>
+            <li>
+              <div class="ico"><i class="bi bi-whatsapp"></i></div>
+              <div>
+                <div class="lbl">WhatsApp / Mobil</div>
+                <a href="tel:+905454562041" class="val">0545 456 2041</a>
+              </div>
+            </li>
+            <li>
+              <div class="ico"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <div class="lbl">Sabit Hat</div>
+                <a href="tel:+902128097111" class="val">0212 809 71 11</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="kt-contact-card">
+          <h3><i class="bi bi-list-ol" style="color: var(--kt-cyan);"></i> 5 Adımda Kargo</h3>
+          <ol class="kt-cargo-steps">
+            <li><strong>WhatsApp'tan yaz:</strong> Sorununu söyle, gönderimi onaylayalım.</li>
+            <li><strong>Bilgi kağıdı hazırla:</strong> Ad, soyad, telefon, arıza açıklaması ve iade adresini bir kağıda yaz, kutuya koy.</li>
+            <li><strong>Kolu paketle:</strong> Orijinal kutu yoksa darbeye karşı sıkı sar (köpük + balon naylon).</li>
+            <li><strong>Aras Kargo şubesine git:</strong> Anlaşma kodumuzu söyle (<strong style="color: var(--kt-cyan);">260 480 565 15 34</strong>).</li>
+            <li><strong>Adresi yazdır:</strong> Yukarıdaki adres + alıcı adı. Kargo bedeli bize gelir.</li>
+          </ol>
+          <a href="https://wa.me/905454562041?text=Merhaba%2C%20Aras%20Kargo%20ile%20kol%20g%C3%B6ndermek%20istiyorum.%20Detay%20alabilir%20miyim%3F" target="_blank" rel="noopener" class="kt-btn-primary" style="width: 100%; justify-content: center; margin-top: 18px;">
+            <i class="bi bi-whatsapp"></i> Kargo Onayı Al
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kutuya Konulacak Bilgi Kağıdı -->
+    <div class="kt-cargo-note-card">
+      <div class="kt-cargo-note-head">
+        <i class="bi bi-info-circle-fill"></i>
+        <div>
+          <h4>Kutuya Bilgi Kağıdı Eklemeyi Unutma!</h4>
+          <p>Onarımın hızlı başlaması ve doğru iade için aşağıdaki bilgileri bir kağıda yaz, kolun yanına bırak.</p>
+        </div>
+      </div>
+
+      <div class="kt-cargo-note-grid">
+        <div class="kt-cargo-note-item">
+          <i class="bi bi-person-fill"></i>
+          <div><strong>Ad Soyad</strong><span>Tam adın</span></div>
+        </div>
+        <div class="kt-cargo-note-item">
+          <i class="bi bi-telephone-fill"></i>
+          <div><strong>Telefon</strong><span>WhatsApp aktif numaran</span></div>
+        </div>
+        <div class="kt-cargo-note-item">
+          <i class="bi bi-tools"></i>
+          <div><strong>Arıza Açıklaması</strong><span>Drift, R2 zayıf vb. — kısa ve net</span></div>
+        </div>
+        <div class="kt-cargo-note-item">
+          <i class="bi bi-house-fill"></i>
+          <div><strong>İade Adresi</strong><span>Tamir bittikten sonra geri yollayacağımız adres</span></div>
+        </div>
+      </div>
+
+      <div class="kt-cargo-note-tip">
+        <i class="bi bi-lightbulb-fill"></i>
+        <span>İpucu: Telefonla aynı bilgileri WhatsApp'tan da yollarsan onarım süreci daha hızlı başlar.</span>
+      </div>
+    </div>
+
+    <!-- Trust note -->
+    <div class="kt-cargo-trust">
+      <div class="kt-cargo-trust-item">
+        <i class="bi bi-shield-fill-check"></i>
+        <div><strong>Sigortalı Gönderim</strong><br>Anlaşmalı kargo otomatik sigortalı, kayıp riski yok.</div>
+      </div>
+      <div class="kt-cargo-trust-item">
+        <i class="bi bi-arrow-repeat"></i>
+        <div><strong>Çift Yön Anlaşma</strong><br>Tamir bittikten sonra dönüş kargosu da bizden.</div>
+      </div>
+      <div class="kt-cargo-trust-item">
+        <i class="bi bi-clock-history"></i>
+        <div><strong>1-2 İş Günü</strong><br>Türkiye genelinde 1-2 iş günü içinde elimize ulaşır.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="kt-section" style="padding-top:0;">
+  <div class="container">
+    <div class="kt-cta-final">
+      <h2>Kodu Aldın. Sıra Yollamada.</h2>
+      <p>Önce WhatsApp'tan onay al, sonra Aras'a götür. Gerisi bizde.</p>
+      <a href="https://wa.me/905454562041?text=Merhaba%2C%20cihaz%C4%B1m%C4%B1%20tamir%20i%C3%A7in%20kargoyla%20g%C3%B6ndermek%20istiyorum.%20Ar%C4%B1za%3A%20" class="kt-btn-primary" target="_blank" rel="noopener">
+        <i class="bi bi-whatsapp"></i> Kargo Onayı Al
+      </a>
+    </div>
   </div>
 </section>
 
@@ -202,6 +335,33 @@
 <a href="https://wa.me/905454562041" class="kt-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp ile yaz"><i class="bi bi-whatsapp"></i></a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function ktCopyCargoCode() {
+  var code = document.getElementById('ktCargoCode').textContent.trim();
+  var btn = document.querySelector('.kt-cargo-copy');
+  var txt = document.getElementById('ktCopyText');
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(code).then(function() {
+      btn.classList.add('copied');
+      txt.textContent = 'Kopyalandı!';
+      setTimeout(function() {
+        btn.classList.remove('copied');
+        txt.textContent = 'Kodu Kopyala';
+      }, 2000);
+    });
+  } else {
+    var range = document.createRange();
+    range.selectNode(document.getElementById('ktCargoCode'));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand('copy');
+    txt.textContent = 'Kopyalandı!';
+    setTimeout(function() { txt.textContent = 'Kodu Kopyala'; }, 2000);
+  }
+}
+var ktCopyBtn = document.querySelector('.kt-cargo-copy');
+if (ktCopyBtn) ktCopyBtn.addEventListener('click', ktCopyCargoCode);
+</script>
 <script src="script.js" defer></script>
 </body>
 </html>
