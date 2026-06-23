@@ -147,6 +147,89 @@
   </div>
 </section>
 
+<!-- TEKLİF FORMU -->
+<section class="kt-section" id="teklif" style="padding-top:0;">
+  <div class="container" style="max-width:720px;">
+    <div class="kt-section-title">
+      <div class="eyebrow">Teklif Al</div>
+      <h2>Ürününü Tarif Et, <span class="grad">Teklifini Al.</span></h2>
+      <p>Formu doldur — WhatsApp'ta hazır mesaj olarak açılır. Aynı gün net teklif, gizli kesinti yok.</p>
+    </div>
+    <div class="kt-contact-card">
+      <form class="kt-form" id="ktAlimForm" onsubmit="ktAlimWhatsApp(event)">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="ktAName">Adınız</label>
+            <input type="text" class="form-control" id="ktAName" placeholder="Yunus" required>
+          </div>
+          <div class="col-sm-6">
+            <label for="ktAPhone">Telefon</label>
+            <input type="tel" class="form-control" id="ktAPhone" placeholder="05XX XXX XX XX">
+          </div>
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="ktAType">Ne satmak istiyorsun?</label>
+          <select class="form-control" id="ktAType" required>
+            <option value="">Seçin...</option>
+            <option>Konsol</option>
+            <option>Oyun (CD/dijital)</option>
+            <option>Kol / Aksesuar</option>
+            <option>Birden fazla ürün</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="ktAModel">Konsol Modeli</label>
+          <select class="form-control" id="ktAModel">
+            <option value="">Seçin (konsolsa)...</option>
+            <optgroup label="PlayStation">
+              <option>PlayStation 5</option>
+              <option>PlayStation 5 Slim</option>
+              <option>PlayStation 5 Pro</option>
+              <option>PlayStation 5 Digital Edition</option>
+              <option>PlayStation 4</option>
+              <option>PlayStation 4 Slim</option>
+              <option>PlayStation 4 Pro</option>
+              <option>PlayStation 3</option>
+            </optgroup>
+            <optgroup label="Xbox">
+              <option>Xbox Series X</option>
+              <option>Xbox Series S</option>
+              <option>Xbox One X</option>
+              <option>Xbox One S</option>
+              <option>Xbox One</option>
+            </optgroup>
+            <optgroup label="Nintendo">
+              <option>Nintendo Switch 2</option>
+              <option>Nintendo Switch OLED</option>
+              <option>Nintendo Switch</option>
+              <option>Nintendo Switch Lite</option>
+            </optgroup>
+            <option>Diğer / Oyun-Aksesuar</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="ktACond">Durum</label>
+          <select class="form-control" id="ktACond" required>
+            <option value="">Seçin...</option>
+            <option>Çalışıyor — sorunsuz</option>
+            <option>Çalışıyor — küçük kusur</option>
+            <option>Arızalı</option>
+            <option>Kutulu / aksesuar tam</option>
+            <option>Kutusuz</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="ktANote">Not (opsiyonel)</label>
+          <textarea class="form-control" id="ktANote" rows="3" placeholder="Kaç adet, kapasite (825GB/1TB), ek bilgi..."></textarea>
+        </div>
+        <button type="submit" class="kt-btn-primary" style="width:100%;justify-content:center;">
+          <i class="bi bi-whatsapp"></i> WhatsApp'tan Teklif Al
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
 <!-- FINAL CTA -->
 <section class="kt-section" style="padding-top:0;">
   <div class="container">
@@ -221,6 +304,21 @@
 </a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function ktAlimWhatsApp(e) {
+  e.preventDefault();
+  function v(id){ var el=document.getElementById(id); return el ? el.value.trim() : ""; }
+  var n=v('ktAName'), p=v('ktAPhone'), t=v('ktAType'), m=v('ktAModel'), c=v('ktACond'), nt=v('ktANote');
+  var x = "Merhaba KonsolTech, ürünümü değerlemek/satmak istiyorum.\n";
+  x += "Ad: " + n + "\n";
+  if (p) x += "Telefon: " + p + "\n";
+  x += "Ürün: " + t + "\n";
+  if (m) x += "Model: " + m + "\n";
+  x += "Durum: " + c + "\n";
+  if (nt) x += "Not: " + nt;
+  window.open("https://wa.me/905454562041?text=" + encodeURIComponent(x), "_blank");
+}
+</script>
 <script async src="//www.instagram.com/embed.js"></script>
 <script src="script.js" defer></script>
 </body>
