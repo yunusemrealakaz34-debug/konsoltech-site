@@ -894,9 +894,12 @@ body {
 }
 
 @media (max-width: 1199px) {
-  .kt-tier-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .kt-tier-grid { gap: 16px; }
   .kt-tier.featured { transform: none; }
   .kt-tier.featured:hover { transform: translateY(-4px); }
+}
+@media (max-width: 991px) {
+  .kt-tier-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
 }
 @media (max-width: 640px) {
   .kt-tier-grid { grid-template-columns: 1fr; }
