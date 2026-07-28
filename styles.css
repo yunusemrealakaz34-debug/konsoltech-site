@@ -2361,13 +2361,16 @@ select:focus-visible {
 }
 
 
-/* Xbox 2'li paket satırı — ortalı, dar */
-.kt-tier-grid--duo {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  max-width: 760px;
+/* Xbox 3'lü paket satırı — ortalı */
+.kt-tier-grid--trio {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1040px;
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 991px) {
+  .kt-tier-grid--trio { grid-template-columns: repeat(2, 1fr); max-width: 760px; }
+}
 @media (max-width: 640px) {
-  .kt-tier-grid--duo { grid-template-columns: 1fr; max-width: 420px; }
+  .kt-tier-grid--trio { grid-template-columns: 1fr; max-width: 420px; }
 }
