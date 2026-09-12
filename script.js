@@ -85,3 +85,41 @@
     videoObserver.observe(heroVideo);
   }
 })();
+
+// Keep only known campaign codes; never forward arbitrary URL parameters to WhatsApp.
+(function () {
+  'use strict';
+  const code = 'META-SITE-KARGO01';
+  const storageKey = 'kt_source_v1';
+  const params = new URLSearchParams(window.location.search);
+  const fromAd = params.get('kt_source') === code &&
+    params.get('utm_campaign') === '120253825252350747' &&
+    params.get('utm_content') === '120254749494740747' &&
+    params.get('utm_source') === 'meta';
+  let source = fromAd ? code : '';
+  try {
+    if (fromAd) window.sessionStorage.setItem(storageKey, code);
+    else if (window.sessionStorage.getItem(storageKey) === code) source = code;
+  } catch (_) { /* Private browsing may disable storage; current-page attribution still works. */ }
+
+  document.querySelectorAll('a[href]').forEach(function (link) {
+    let url;
+    try { url = new URL(link.getAttribute('href'), window.location.href); }
+    catch (_) { return; }
+    if (url.protocol === 'https:' && url.hostname === 'wa.me' && url.pathname === '/905454562041') {
+      const message = url.searchParams.get('text') ||
+        'Merhaba, kargoyla tamir için bilgi almak istiyorum.\nCihaz modelim: …\nArıza: …\nŞehir: …';
+      url.searchParams.set('text', message + '\nKaynak: ' + (source || 'SITE-DOGRUDAN'));
+      link.href = url.toString();
+    } else if (source && url.origin === window.location.origin &&
+               /\/(?:index|hizmetler|kargo|paketler|surec|neden-biz|sss|iletisim)\.html$/.test(url.pathname)) {
+      // Preserve the source across site pages even when session storage is unavailable.
+      url.searchParams.set('kt_source', code);
+      url.searchParams.set('utm_source', 'meta');
+      url.searchParams.set('utm_medium', 'paid_social');
+      url.searchParams.set('utm_campaign', '120253825252350747');
+      url.searchParams.set('utm_content', '120254749494740747');
+      link.href = url.toString();
+    }
+  });
+})();
