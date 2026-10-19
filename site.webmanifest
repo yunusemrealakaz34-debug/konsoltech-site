@@ -1,11 +1,11 @@
 {
-  "name": "KonsolTech — Konsol ve Kol Servisi",
+  "name": "KonsolTech — DualSense & PS5 Kol Tamiri",
   "short_name": "KonsolTech",
-  "description": "PlayStation, Xbox ve oyun kolu tamiri. Beylikdüzü servis ve Türkiye geneli kargo.",
-  "start_url": "/",
+  "description": "PlayStation, Xbox ve oyun kolu servisi. Beylikdüzü’nde elden teslim ve Türkiye geneli kargo.",
+  "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#060e1f",
-  "theme_color": "#060e1f",
+  "background_color": "#060E1F",
+  "theme_color": "#00A8FF",
   "lang": "tr",
   "dir": "ltr",
   "icons": [
