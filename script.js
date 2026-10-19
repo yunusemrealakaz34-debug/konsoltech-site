@@ -109,7 +109,7 @@
     if (url.protocol === 'https:' && url.hostname === 'wa.me' && url.pathname === '/905454562041') {
       const message = url.searchParams.get('text') ||
         'Merhaba, kargoyla tamir için bilgi almak istiyorum.\nCihaz modelim: …\nArıza: …\nŞehir: …';
-      url.searchParams.set('text', message + '\nKaynak: ' + (source || 'SITE-DOGRUDAN'));
+      url.searchParams.set('text', message + (source ? '\nBizi Instagram/Facebook reklamında gördüm.' : ''));
       link.href = url.toString();
     } else if (source && url.origin === window.location.origin &&
                /\/(?:index|hizmetler|kargo|paketler|surec|neden-biz|sss|iletisim)\.html$/.test(url.pathname)) {

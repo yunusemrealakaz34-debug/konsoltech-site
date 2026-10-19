@@ -1,16 +1,19 @@
 {
-  "name": "KonsolTech — DualSense & PS5 Kol Tamiri",
+  "name": "KonsolTech — Konsol ve Kol Servisi",
   "short_name": "KonsolTech",
-  "description": "Türkiye'nin gamer-first tamir servisi. DualSense drift, Hall Effect & TMR yükseltme, garantili onarım.",
-  "start_url": "/index.html",
+  "description": "PlayStation, Xbox ve oyun kolu tamiri. Beylikdüzü servis ve Türkiye geneli kargo.",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#060E1F",
-  "theme_color": "#00A8FF",
+  "background_color": "#060e1f",
+  "theme_color": "#060e1f",
   "lang": "tr",
   "dir": "ltr",
   "icons": [
-    { "src": "favicon-32x32.png", "sizes": "32x32", "type": "image/png" },
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+    {
+      "src": "favicon-brand.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
   ]
 }
