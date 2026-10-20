@@ -2190,8 +2190,8 @@ select:focus-visible {
 .kt-edition-sec { padding-top: 8px; }
 .kt-edition-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
   margin-top: 14px;
 }
 .kt-edition {
@@ -2200,7 +2200,8 @@ select:focus-visible {
   background: var(--kt-surface);
   border: 1px solid var(--kt-border);
   border-radius: 22px;
-  padding: 24px 22px 22px;
+  padding: 16px;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -2215,28 +2216,13 @@ select:focus-visible {
 .kt-ed-red  { --ed: #FF5A5F; --ed-soft: rgba(255,90,95,.16); }
 .kt-ed-gold { --ed: #F5A623; --ed-soft: rgba(245,166,35,.16); }
 
-.kt-ed-tag {
-  position: absolute;
-  top: -13px; left: 50%;
-  transform: translateX(-50%);
-  background: var(--ed);
-  color: #fff;
-  font-size: 11.5px; font-weight: 800;
-  letter-spacing: .7px; text-transform: uppercase;
-  padding: 7px 20px;
-  border-radius: 999px;
-  white-space: nowrap;
-  box-shadow: 0 8px 22px rgba(0,0,0,.35);
-}
-.kt-ed-gold .kt-ed-tag { color: #1a1206; }
-
 .kt-ed-img {
   background: linear-gradient(160deg, #f5f8fc, #dde6f1);
   border-radius: 16px;
-  aspect-ratio: 16 / 11;
+  aspect-ratio: 4 / 3;
   display: flex; align-items: center; justify-content: center;
   overflow: hidden;
-  margin: 12px 0 18px;
+  margin: 0 0 16px;
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.5);
 }
 .kt-ed-img img { width: 88%; height: 88%; object-fit: contain; display: block; }
@@ -2250,44 +2236,53 @@ select:focus-visible {
 
 .kt-edition h3 {
   color: var(--ed);
-  font-size: 22px; font-weight: 800;
-  margin: 0 0 8px;
+  font-size: 20px; font-weight: 800;
+  line-height: 1.35;
+  min-height: 2.7em;
+  margin: 0 0 14px;
 }
-.kt-ed-desc {
-  color: var(--kt-body);
-  font-size: 14px; line-height: 1.6;
-  margin: 0 0 18px;
-  min-height: 44px;
-}
-.kt-ed-features {
-  list-style: none; padding: 0;
-  margin: 0 0 22px;
-  display: flex; flex-direction: column; gap: 11px;
-}
-.kt-ed-features li {
-  display: flex; align-items: flex-start; gap: 9px;
-  color: var(--kt-body); font-size: 14px; line-height: 1.4;
-}
-.kt-ed-features i { color: var(--ed); font-size: 16px; margin-top: 1px; flex: 0 0 auto; }
 
 .kt-ed-cta {
   margin-top: auto;
   display: flex; align-items: center; justify-content: center; gap: 9px;
   background: var(--ed);
-  color: #fff;
+  color: #061426;
   font-weight: 800; font-size: 16px;
-  padding: 16px;
+  min-height: 48px;
+  padding: 12px;
   border-radius: 14px;
   text-decoration: none;
   box-shadow: 0 10px 26px var(--ed-soft);
   transition: filter .18s, transform .18s;
 }
-.kt-ed-gold .kt-ed-cta { color: #1a1206; }
-.kt-ed-cta:hover { filter: brightness(1.08); transform: translateY(-2px); }
-.kt-ed-blue .kt-ed-cta:hover, .kt-ed-red .kt-ed-cta:hover { color: #fff; }
+.kt-ed-cta:hover { color: #061426; filter: brightness(1.08); transform: translateY(-2px); }
+.kt-ed-cta:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+
+.kt-ed-notes {
+  margin-top: 24px;
+  padding: 20px 24px;
+  border: 1px solid var(--kt-border);
+  border-radius: 16px;
+  background: var(--kt-surface);
+  color: var(--kt-body);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.kt-ed-notes h3 { color: #fff; font-size: 16px; font-weight: 700; margin: 0 0 10px; }
+.kt-ed-notes p { margin: 0 0 8px; }
+.kt-ed-notes p:last-child { margin-bottom: 0; }
+.kt-ed-notes strong { color: #fff; }
 
 @media (max-width: 900px) {
-  .kt-edition-grid { grid-template-columns: 1fr; max-width: 440px; margin-left: auto; margin-right: auto; }
+  .kt-edition-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+}
+@media (max-width: 575px) {
+  .kt-edition-grid { gap: 12px; }
+  .kt-edition { padding: 10px; border-radius: 16px; }
+  .kt-ed-img { aspect-ratio: 1; border-radius: 10px; margin-bottom: 12px; }
+  .kt-edition h3 { font-size: 15px; margin-bottom: 12px; }
+  .kt-ed-cta { min-height: 44px; padding: 10px 6px; gap: 6px; font-size: 14px; border-radius: 10px; }
+  .kt-ed-notes { padding: 16px; }
 }
 
 
