@@ -366,9 +366,9 @@ body {
   z-index: 3;
 }
 .kt-floating-badge i { color: var(--kt-cyan); font-size: 22px; filter: drop-shadow(0 0 8px rgba(46, 229, 255, 0.6)); }
-.kt-fb-1 { top: 30px; left: -20px; animation: ktFloat 4s ease-in-out infinite; }
-.kt-fb-2 { bottom: 60px; right: -10px; animation: ktFloat 4s ease-in-out infinite reverse; animation-delay: 1s; }
-.kt-fb-3 { top: 50%; right: -30px; animation: ktFloat 5s ease-in-out infinite; animation-delay: 0.5s; }
+.kt-fb-1 { top: 30px; left: 12px; animation: ktFloat 4s ease-in-out infinite; }
+.kt-fb-2 { bottom: 60px; right: 12px; animation: ktFloat 4s ease-in-out infinite reverse; animation-delay: 1s; }
+.kt-fb-3 { top: 50%; right: 12px; animation: ktFloat 5s ease-in-out infinite; animation-delay: 0.5s; }
 @keyframes ktFloat {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
@@ -1278,7 +1278,7 @@ body {
 /* Service card with image (hizmetler page) */
 .kt-svc-img-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 24px;
 }
 .kt-svc-img {
@@ -2375,3 +2375,58 @@ select:focus-visible {
 .kt-original-logo img {position:absolute;max-width:none!important;width:143.95393474%!important;height:auto!important;left:-21.97696737%;top:-117.16196137%;object-fit:contain!important;filter:none!important;}
 .kt-brand{display:inline-flex;align-items:center;line-height:1;}
 @media(max-width:575px){.kt-original-logo{width:144px}}
+
+/* Legal disclosures retain the original dark theme and unmodified brand image. */
+.kt-brand { position: relative; }
+.kt-brand .kt-service-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  color: #c5e8ff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: .5px;
+  text-align: center;
+}
+.kt-service-note {
+  margin: 14px 0 0;
+  color: var(--kt-body);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.kt-legal-inline {
+  padding: 16px 18px;
+  margin: 24px 0;
+  border: 1px solid var(--kt-border-hi);
+  border-radius: 12px;
+  background: var(--kt-surface);
+  color: var(--kt-body);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.kt-legal-inline a, .kt-service-note a { color: #75d3ff; text-decoration: underline; }
+#ktContactPrivacy a, #ktAlimPrivacy a { color: #75d3ff; text-decoration: underline; }
+.kt-seo-content a:not(.kt-btn-primary):not(.kt-btn-ghost) { color: #75d3ff; text-decoration: underline; }
+.kt-legal .kt-legal-card {
+  background: var(--kt-surface);
+  color: var(--kt-body);
+  border: 1px solid var(--kt-border-hi);
+  overflow-wrap: anywhere;
+}
+.kt-legal .kt-legal-card h1, .kt-legal .kt-legal-card h2,
+.kt-legal .kt-legal-card h3, .kt-legal .kt-legal-card strong { color: #fff; }
+.kt-legal .kt-legal-card p, .kt-legal .kt-legal-card li { color: var(--kt-body); }
+.kt-legal .kt-legal-card a { color: #75d3ff; text-decoration: underline; }
+.kt-legal .kt-legal-updated { color: var(--kt-muted); }
+.kt-legal-card [id] { scroll-margin-top: 180px; }
+.kt-legal-card a:focus-visible, .kt-legal-inline a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+@media (max-width: 575px) {
+  .kt-alim-intro { --bs-gutter-x: 1.5rem; }
+  .kt-legal .kt-legal-card { padding: 24px 18px; }
+  .kt-legal .kt-legal-card h1 { font-size: 1.7rem; }
+}

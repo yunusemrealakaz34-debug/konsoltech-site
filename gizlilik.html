@@ -17,12 +17,10 @@
 <link href="site.webmanifest" rel="manifest"/>
 <meta content="#060E1F" name="theme-color"/>
 <meta content="#00A8FF" name="msapplication-TileColor"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet"/>
-<link href="styles.css?v=20261020-rollback" rel="stylesheet"/>
+<link href="assets/vendor/inter/inter.css" rel="stylesheet"/>
+<link href="assets/vendor/bootstrap-5.3.2/bootstrap.min.css" rel="stylesheet"/>
+<link href="assets/vendor/bootstrap-icons-1.11.2/bootstrap-icons.css" rel="stylesheet"/>
+<link href="styles.css?v=20261029-legal" rel="stylesheet"/>
 <style>
   .kt-legal { padding: 50px 0 70px; }
   .kt-legal-card {
@@ -37,12 +35,12 @@
   .kt-legal-updated { font-size: 13.5px; color:#8a90a6; margin-bottom: 24px; }
   .kt-legal-card ul { padding-left: 20px; }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "LocalBusiness", "@id": "https://playstationtamir.com/#business", "name": "KonsolTech", "url": "https://playstationtamir.com/", "telephone": "+902128097111", "email": "info@konsoltech.tr", "address": {"@type": "PostalAddress", "streetAddress": "Kavaklı Mah. Kocatepe Cad. No: 319/6C", "addressLocality": "Beylikdüzü", "addressRegion": "İstanbul", "addressCountry": "TR"}, "founder": {"@type": "Person", "name": "Yunus Emre Alakaz"}, "sameAs": ["https://www.instagram.com/konsoltekk/", "https://www.tiktok.com/@konsoltech"]}, {"@type": "WebSite", "url": "https://playstationtamir.com/", "name": "KonsolTech", "inLanguage": "tr-TR"}]}</script><link href="favicon-brand.svg" rel="icon" type="image/svg+xml"/></head>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://playstationtamir.com/#business","name":"KonsolTech","url":"https://playstationtamir.com/","description":"İstanbul Beylikdüzü’nde PlayStation konsolları ve oyun kolları için bağımsız özel servis. Elden teslim ve Türkiye geneli kargoyla servis başvurusu.","telephone":"+902128097111","email":"info@konsoltech.tr","logo":"https://playstationtamir.com/images/logo-beyaz.png","image":"https://playstationtamir.com/images/hero.jpg","address":{"@type":"PostalAddress","streetAddress":"Kavaklı Mah. Kocatepe Cad. No: 319/6C","addressLocality":"Beylikdüzü","addressRegion":"İstanbul","addressCountry":"TR"},"founder":{"@type":"Person","@id":"https://playstationtamir.com/#founder","name":"Yunus Emre Alakaz"},"areaServed":{"@type":"Country","name":"Türkiye"},"contactPoint":[{"@type":"ContactPoint","contactType":"Müşteri hizmetleri","telephone":"+902128097111","availableLanguage":["tr"],"url":"https://playstationtamir.com/iletisim"},{"@type":"ContactPoint","contactType":"WhatsApp servis başvurusu","telephone":"+905454562041","availableLanguage":["tr"],"url":"https://wa.me/905454562041"}],"sameAs":["https://www.instagram.com/konsoltekk/","https://www.tiktok.com/@konsoltech"]},{"@type":"WebSite","@id":"https://playstationtamir.com/#website","url":"https://playstationtamir.com/","name":"KonsolTech","inLanguage":"tr-TR","publisher":{"@id":"https://playstationtamir.com/#business"}},{"@type":"WebPage","@id":"https://playstationtamir.com/gizlilik#webpage","url":"https://playstationtamir.com/gizlilik","name":"Gizlilik Politikası | KonsolTech","description":"KonsolTech gizlilik politikası — kişisel verilerinizi nasıl topladığımız, kullandığımız ve koruduğumuz hakkında bilgi.","inLanguage":"tr-TR","isPartOf":{"@id":"https://playstationtamir.com/#website"},"about":{"@id":"https://playstationtamir.com/#business"},"publisher":{"@id":"https://playstationtamir.com/#business"}}]}</script><link href="favicon-brand.svg" rel="icon" type="image/svg+xml"/></head>
 <body>
 <!-- Navbar -->
 <nav class="kt-nav navbar navbar-expand-lg">
 <div class="container">
-<a class="kt-brand" href="index.html"><span class="kt-original-logo"><img alt="KonsolTech" height="4500" src="images/logo-beyaz.png?v=20261020-drive" width="4500"/></span></a>
+<a class="kt-brand" href="index.html"><span class="kt-original-logo"><img alt="KonsolTech" height="4500" src="images/logo-beyaz.png?v=20261020-drive" width="4500"/></span><span class="kt-service-label">Özel Servis</span></a>
 <button aria-controls="ktNav" aria-expanded="false" aria-label="Menüyü aç" class="navbar-toggler" data-bs-target="#ktNav" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -55,7 +53,7 @@
 <li class="nav-item"><a class="nav-link" href="neden-biz.html">Neden Biz</a></li>
 <li class="nav-item"><a class="nav-link" href="sss.html">SSS</a></li>
 <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
-<li class="nav-item"><a class="kt-cta-nav nav-link" href="https://wa.me/905454562041" rel="noopener" target="_blank"><i class="bi bi-whatsapp"></i> Hemen Yaz</a></li>
+<li class="nav-item"><a class="kt-cta-nav nav-link" href="https://wa.me/905454562041" rel="noopener noreferrer" target="_blank"><i class="bi bi-whatsapp"></i> Hemen Yaz</a></li>
 </ul>
 </div>
 </div>
@@ -63,52 +61,31 @@
 <section id="main" class="kt-legal">
   <div class="container">
     <div class="kt-legal-card">
-      <h1>Gizlilik Politikası</h1>
-      <div class="kt-legal-updated">Son güncelleme: 25.05.2026</div>
-
-      <p>KonsolTech olarak kişisel verilerinizin gizliliğine önem veriyoruz. Bu Gizlilik Politikası, <a href="https://playstationtamir.com">playstationtamir.com</a> web sitesi ve iletişim kanallarımız (WhatsApp, e-posta, telefon, iletişim formu) üzerinden elde edilen kişisel verilerin; 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili mevzuata uygun olarak nasıl işlendiğini açıklar.</p>
-
-      <h2>1. Veri Sorumlusu</h2>
-      <p>
-        <strong>KonsolTech — Yunus Emre Alakaz</strong><br>
-        Vergi Kimlik No (VKN): 0471607540<br>
-        Adres: Kavaklı Mahallesi, Kocatepe Caddesi No: 319/6C, Beylikdüzü / İstanbul<br>
-        E-posta: <a href="mailto:info@konsoltech.tr">info@konsoltech.tr</a> · Telefon: 0212 809 71 11
-      </p>
-
-      <h2>2. Topladığımız Veriler</h2>
-      <p>Hizmet talebiniz veya bizimle iletişime geçmeniz sırasında şu veriler işlenebilir:</p>
-      <ul>
-        <li>Ad-soyad ve iletişim bilgileri (telefon, e-posta)</li>
-        <li>Tamir/servis talebinize ilişkin cihaz ve arıza bilgileri</li>
-        <li>Kargo gönderimi için teslimat adresi</li>
-        <li>WhatsApp / iletişim formu üzerinden ilettiğiniz mesaj içerikleri</li>
-        <li>Web sitesi kullanımına dair çerez verileri (aşağıya bakınız)</li>
-      </ul>
-
-      <h2>3. Verilerin İşlenme Amaçları</h2>
-      <ul>
-        <li>Tamir/servis hizmetinin sunulması ve takibi</li>
-        <li>Sorularınıza ve taleplerinize yanıt verilmesi</li>
-        <li>Kargo ve teslimat süreçlerinin yürütülmesi</li>
-        <li>Garanti süreçlerinin yönetilmesi</li>
-        <li>Yasal yükümlülüklerin yerine getirilmesi</li>
-      </ul>
-
-      <h2>4. Verilerin Aktarımı</h2>
-      <p>Kişisel verileriniz; yalnızca hizmetin gerektirdiği ölçüde, kargo gönderiminiz için anlaşmalı kargo firmalarıyla ve yasal olarak yetkili kamu kurumlarıyla paylaşılabilir. Verileriniz pazarlama amacıyla üçüncü kişilere satılmaz veya kiralanmaz.</p>
-
-      <h2>5. Çerezler (Cookies)</h2>
-      <p>Web sitemiz; deneyiminizi iyileştirmek, kullanımı analiz etmek ve içerikleri kişiselleştirmek amacıyla çerezler kullanabilir. Tarayıcı ayarlarınızdan çerezleri reddedebilir veya silebilirsiniz.</p>
-
-      <h2>6. Saklama Süresi</h2>
-      <p>Kişisel verileriniz, işleme amacının gerektirdiği süre ve ilgili mevzuatta öngörülen yasal saklama süreleri boyunca saklanır; süre sonunda silinir, yok edilir veya anonim hâle getirilir.</p>
-
-      <h2>7. Haklarınız (KVKK m. 11)</h2>
-      <p>Kişisel verilerinize ilişkin; verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini isteme ve kanunda sayılan diğer haklara sahipsiniz. Taleplerinizi <a href="mailto:info@konsoltech.tr">info@konsoltech.tr</a> adresine iletebilirsiniz. Talebiniz en geç 30 gün içinde sonuçlandırılır.</p>
-
-      <h2>8. İletişim</h2>
-      <p>Gizlilik ile ilgili tüm soru ve talepleriniz için: <a href="mailto:info@konsoltech.tr">info@konsoltech.tr</a> · 0212 809 71 11 · <a href="iletisim.html">İletişim sayfası</a></p>
+<h1>Gizlilik ve Çerez Politikası</h1>
+<div class="kt-legal-updated">Son güncelleme: 29.10.2026</div>
+<p>Bu sayfa, playstationtamir.com sitesinin teknik işleyişini ve iletişim sırasında kişisel verilerinizle ilgili dikkat edilmesi gereken noktaları açıklar. İşleme amaçları, hukuki dayanaklar, alıcılar ve haklarınızın ayrıntısı <a href="kvkk.html">KVKK Aydınlatma Metni</a> içindedir.</p>
+<h2>1. İşletme ve iletişim</h2>
+<p><strong>KonsolTech — Yunus Emre Alakaz</strong><br>
+Vergi Kimlik No (VKN): 0471607540<br>
+Kavaklı Mahallesi, Kocatepe Caddesi No: 319/6C, Beylikdüzü / İstanbul<br>
+E-posta: <a href="mailto:info@konsoltech.tr">info@konsoltech.tr</a> · Telefon: <a href="tel:+902128097111">0212 809 71 11</a></p>
+<h2>2. Siteyi ziyaret ettiğinizde</h2>
+<p>Site GitHub Pages üzerinde yayımlanır. Sayfayı sunmak için IP adresi, erişim zamanı, istenen adres ve tarayıcı bilgileri gibi teknik veriler barındırma hizmeti kapsamında işlenebilir. Bu nedenle “ziyarette hiçbir veri işlenmez” sözü vermiyoruz. Sitenin yazı tipleri, görselleri ve arayüz dosyaları kendi site adresimizden yüklenir.</p>
+<h2>3. Formlar ve WhatsApp</h2>
+<p>İletişim formu ad, hizmet seçimi ve mesaj; konsol alım formu ad, isteğe bağlı telefon, cihaz ve durum bilgileri ister. Bu bilgiler talebinize yanıt verebilmek içindir. Formlar sitede bir müşteri kaydı oluşturmaz; WhatsApp düğmesine bastığınızda bilgiler, WhatsApp'a açılan mesaj taslağında yer alır. Bu aşamada taslak WhatsApp hizmetine aktarılır; mesajı bize göndermek için WhatsApp'ta ayrıca gönderme işlemi yaparsınız.</p>
+<p>Mesajı göndermeden önce gözden geçirin. Cihaz hesabınızın şifresini, ödeme kartı bilgilerinizi veya gereksiz kimlik belgesini paylaşmayın. WhatsApp kullanmadan <a href="tel:+902128097111">0212 809 71 11</a> veya <a href="mailto:info@konsoltech.tr">info@konsoltech.tr</a> üzerinden de başvurabilirsiniz.</p>
+<h2 id="cerezler">4. Çerezler ve tarayıcı depolaması</h2>
+<p>Mevcut site sürümü reklam veya analitik çerezi yerleştirmez; Meta Pixel ve Google Analytics kullanmaz. Ziyaret ya da kampanya takibi amacıyla tarayıcıda localStorage veya sessionStorage kaydı oluşturmaz. Önceki sürümden kalan reklam kaynağı oturum kaydı yeni sürümde kaldırılır.</p>
+<p>Reklamdan açılan adres belirli kampanya kodları içerebilir. Bu kodlar site içindeki bağlantılarda korunabilir ve WhatsApp mesaj taslağına reklam kaynağını belirten ifade ekleyebilir. Ayrı bir takip çerezi oluşturulmaz. Taslağı düzenleyebilir veya göndermemeyi seçebilirsiniz. Adres ve teknik erişim bilgilerinin barındırma hizmetinde işlenmesi bu durumdan ayrıdır.</p>
+<p>Instagram içeriği ve Google Haritalar bu site içinde otomatik yüklenmez. İsterseniz dış bağlantıdan ilgili platforma geçebilirsiniz; o sitedeki çerezler ve tercihler kendi kurallarına tabidir. İleride rızaya bağlı bir çerez veya gömülü içerik eklenirse çalıştırılmadan önce gerekli bilgilendirme ve tercih imkânı sunulur.</p>
+<h2>5. Dış hizmetler ve paylaşım</h2>
+<p>Hizmetin gerektirdiği ölçüde kargo/lojistik sağlayıcıları, seçtiğiniz iletişim kanalları ve yasal olarak yetkili mercilerle veri paylaşımı söz konusu olabilir. Site barındırma hizmeti de teknik erişim bilgilerini işleyebilir. Dış iletişim bağlantıları seçtiğiniz sağlayıcıya geçiş yapar; bunlar bir genel veri işleme onayı değildir.</p>
+<p>GitHub ve Meta/WhatsApp gibi sağlayıcıların yurt dışı altyapıları nedeniyle yurt dışında işleme söz konusu olabilir. İşleme ve aktarımın kapsamı, ilgili sağlayıcı ve iletişim kanalı bakımından değerlendirilir. <a href="kvkk.html">KVKK metninde</a> alıcı grupları ve başvuru kanalları açıklanmıştır.</p>
+<h2>6. Servis kayıtları ve saklama</h2>
+<p>Bizimle iletişime geçtiğinizde müşteri iletişim bilgileri, cihaz ve arıza bilgileri, işlem onayları, teslimat ve garanti kayıtları hizmet için işlenebilir. Cihazın içeriği ile müşteri hizmet kayıtları farklıdır. Konsolunuzu teslim etmeden önce gerekli yedeklemeyi yapın; bir hesap veya cihaz içeriğine erişim gerekip gerekmediğini işlem öncesinde görüşün.</p>
+<p>Veriler yalnız ilgili amaç ve uygulanabilir yasal saklama gerekleri için gerekli süre boyunca tutulur. Saklama gerekçesi sona eren kayıtlar hakkında silme, yok etme veya anonimleştirme uygulanır. Haklarınız veya belirli kayıtlarınız için <a href="veri-silme.html">veri silme başvuru sayfasını</a> kullanabilirsiniz.</p>
+<h2>7. Başvurular</h2>
+<p>Gizlilik ve KVKK talepleri için <a href="mailto:info@konsoltech.tr">info@konsoltech.tr</a> adresine başvurabilirsiniz. Başvuru en kısa sürede, en geç 30 gün içinde gerekçeli olarak sonuçlandırılır. Kimlik doğrulaması için yalnız gerekli ve ölçülü bilgi talep edilir. Tam hak listesi ve posta adresi <a href="kvkk.html">KVKK Aydınlatma Metni</a> içindedir.</p>
     </div>
   </div>
 </section>
@@ -120,10 +97,10 @@
 <div class="brand-foot mb-3"><span class="kt-original-logo"><img alt="KonsolTech" height="4500" src="images/logo-beyaz.png?v=20261020-drive" width="4500"/></span></div>
 <p style="font-size: 14.5px; line-height: 1.7; color: rgba(255,255,255,0.6);">PlayStation, Xbox ve oyun kolları için servis, analog modül seçenekleri ve özel kasa tasarımları. Beylikdüzü’nde elden teslim ve Türkiye geneli kargo.</p>
 <div class="kt-social mt-3">
-<a aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61586407559344" rel="noopener" target="_blank"><i class="bi bi-facebook"></i></a>
-<a aria-label="Instagram" href="https://www.instagram.com/konsoltekk" rel="noopener" target="_blank"><i class="bi bi-instagram"></i></a>
-<a aria-label="TikTok" href="https://www.tiktok.com/@konsoltech" rel="noopener" target="_blank"><i class="bi bi-tiktok"></i></a>
-<a aria-label="WhatsApp" href="https://wa.me/905454562041" rel="noopener" target="_blank"><i class="bi bi-whatsapp"></i></a>
+<a aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61586407559344" rel="noopener noreferrer" target="_blank"><i class="bi bi-facebook"></i></a>
+<a aria-label="Instagram" href="https://www.instagram.com/konsoltekk" rel="noopener noreferrer" target="_blank"><i class="bi bi-instagram"></i></a>
+<a aria-label="TikTok" href="https://www.tiktok.com/@konsoltech" rel="noopener noreferrer" target="_blank"><i class="bi bi-tiktok"></i></a>
+<a aria-label="WhatsApp" href="https://wa.me/905454562041" rel="noopener noreferrer" target="_blank"><i class="bi bi-whatsapp"></i></a>
 </div>
 </div>
 <div class="col-lg-2 col-md-4 col-6">
@@ -147,24 +124,26 @@
 <h6>Bize Ulaşın</h6>
 <a href="https://playstationtamir.com"><i class="bi bi-globe me-2"></i> playstationtamir.com</a>
 <a href="mailto:info@konsoltech.tr"><i class="bi bi-envelope me-2"></i> info@konsoltech.tr</a>
-<a href="https://wa.me/905454562041" rel="noopener" target="_blank"><i class="bi bi-whatsapp me-2"></i> 0545 456 2041 (WhatsApp)</a>
+<a href="https://wa.me/905454562041" rel="noopener noreferrer" target="_blank"><i class="bi bi-whatsapp me-2"></i> 0545 456 2041 (WhatsApp)</a>
 <a href="tel:+902128097111"><i class="bi bi-telephone-fill me-2"></i> 0212 809 71 11 (Sabit Hat)</a>
-<a href="https://maps.google.com/?q=KonsolTech+Kocatepe+Caddesi+319+Beylikduzu+Istanbul" rel="noopener" target="_blank"><i class="bi bi-geo-alt me-2"></i> Kavaklı Mah. Kocatepe Cad. No:319/6C Beylikdüzü / İstanbul</a>
+<a href="https://maps.google.com/?q=KonsolTech+Kocatepe+Caddesi+319+Beylikduzu+Istanbul" rel="noopener noreferrer" target="_blank"><i class="bi bi-geo-alt me-2"></i> Kavaklı Mah. Kocatepe Cad. No:319/6C Beylikdüzü / İstanbul</a>
 </div>
 </div>
 <div class="copy text-center">
 <div style="margin-bottom:8px;">
+<a href="servis-kosullari.html" style="color:rgba(255,255,255,0.85);text-decoration:none;margin:0 8px;">Servis ve Tüketici Hakları</a> ·
 <a href="gizlilik.html" style="color:rgba(255,255,255,0.7);text-decoration:none;margin:0 8px;">Gizlilik Politikası</a> ·
         <a href="kvkk.html" style="color:rgba(255,255,255,0.7);text-decoration:none;margin:0 8px;">KVKK Aydınlatma Metni</a> ·
         <a href="veri-silme.html" style="color:rgba(255,255,255,0.7);text-decoration:none;margin:0 8px;">Veri Silme</a> ·
         <a href="iletisim.html" style="color:rgba(255,255,255,0.7);text-decoration:none;margin:0 8px;">İletişim</a>
 </div>
 <div style="font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:6px;">KonsolTech — Yunus Emre Alakaz · VKN: 0471607540 · Kavaklı Mah. Kocatepe Cad. No:319/6C Beylikdüzü / İstanbul</div>
+<p class="kt-service-note">KonsolTech, üretici ve ithalatçılardan bağımsız bir özel servistir.</p>
       © 2026 KonsolTech. Tüm hakları saklıdır.
     </div>
 </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script defer="" src="script.js?v=20261020"></script>
+<script src="assets/vendor/bootstrap-5.3.2/bootstrap.bundle.min.js"></script>
+<script defer="" src="script.js?v=20261029-legal"></script>
 </body>
 </html>

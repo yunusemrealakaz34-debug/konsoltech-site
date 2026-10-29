@@ -86,21 +86,21 @@
   }
 })();
 
-// Keep only known campaign codes; never forward arbitrary URL parameters to WhatsApp.
+// Keep the known campaign context in the current URL only; do not store visitor tracking data.
+// Never forward arbitrary URL parameters to WhatsApp.
 (function () {
   'use strict';
   const code = 'META-SITE-KARGO01';
-  const storageKey = 'kt_source_v1';
   const params = new URLSearchParams(window.location.search);
   const fromAd = params.get('kt_source') === code &&
     params.get('utm_campaign') === '120253825252350747' &&
     params.get('utm_content') === '120254749494740747' &&
     params.get('utm_source') === 'meta';
-  let source = fromAd ? code : '';
+  const source = fromAd ? code : '';
   try {
-    if (fromAd) window.sessionStorage.setItem(storageKey, code);
-    else if (window.sessionStorage.getItem(storageKey) === code) source = code;
-  } catch (_) { /* Private browsing may disable storage; current-page attribution still works. */ }
+    // Delete the source marker left by earlier site versions; never read or recreate it.
+    window.sessionStorage.removeItem('kt_source_v1');
+  } catch (_) { /* Attribution from the current URL works even when storage is unavailable. */ }
 
   document.querySelectorAll('a[href]').forEach(function (link) {
     let url;
@@ -113,7 +113,7 @@
       link.href = url.toString();
     } else if (source && url.origin === window.location.origin &&
                /\/(?:index|hizmetler|kargo|paketler|surec|neden-biz|sss|iletisim)\.html$/.test(url.pathname)) {
-      // Preserve the source across site pages even when session storage is unavailable.
+      // Preserve only this known campaign context in links, without browser storage.
       url.searchParams.set('kt_source', code);
       url.searchParams.set('utm_source', 'meta');
       url.searchParams.set('utm_medium', 'paid_social');
