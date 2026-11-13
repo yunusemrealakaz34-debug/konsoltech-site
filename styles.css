@@ -2188,6 +2188,18 @@ select:focus-visible {
    ÖZEL SERİ KASA DEĞİŞİMİ — paketler.html
    ============================================================ */
 .kt-edition-sec { padding-top: 8px; }
+.kt-ed-disclosure {
+  margin: 0 0 22px;
+  padding: 16px 20px;
+  border: 1px solid var(--kt-border-hi);
+  border-radius: 14px;
+  background: rgba(0, 168, 255, .08);
+  color: var(--kt-body);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.kt-ed-disclosure strong { display: block; color: #fff; font-size: 16px; }
+.kt-ed-disclosure p { margin: 5px 0 0; }
 .kt-edition-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2215,6 +2227,23 @@ select:focus-visible {
 .kt-ed-blue { --ed: #00A8FF; --ed-soft: rgba(0,168,255,.16); }
 .kt-ed-red  { --ed: #FF5A5F; --ed-soft: rgba(255,90,95,.16); }
 .kt-ed-gold { --ed: #F5A623; --ed-soft: rgba(245,166,35,.16); }
+.kt-ed-kind {
+  align-self: flex-start;
+  margin: 0 0 12px;
+  padding: 5px 9px;
+  border: 1px solid rgba(117, 211, 255, .28);
+  border-radius: 8px;
+  background: rgba(0, 168, 255, .08);
+  color: #bfeaff;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+.kt-ed-details { margin: 0 0 16px; font-size: 13px; line-height: 1.5; }
+.kt-ed-details p { margin: 0 0 5px; }
+.kt-ed-details p:last-child { margin-bottom: 0; }
+.kt-ed-inclusion { color: #c5d2e5; }
+.kt-ed-shell-only { color: #fff; font-weight: 700; }
 
 .kt-ed-img {
   background: linear-gradient(160deg, #f5f8fc, #dde6f1);
@@ -2279,6 +2308,8 @@ select:focus-visible {
 @media (max-width: 575px) {
   .kt-edition-grid { gap: 12px; }
   .kt-edition { padding: 10px; border-radius: 16px; }
+  .kt-ed-kind { font-size: 11px; padding: 5px 7px; margin-bottom: 10px; }
+  .kt-ed-details { font-size: 12px; margin-bottom: 12px; }
   .kt-ed-img { aspect-ratio: 1; border-radius: 10px; margin-bottom: 12px; }
   .kt-edition h3 { font-size: 15px; margin-bottom: 12px; }
   .kt-ed-cta { min-height: 44px; padding: 10px 6px; gap: 6px; font-size: 14px; border-radius: 10px; }
