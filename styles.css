@@ -2187,7 +2187,43 @@ select:focus-visible {
 /* ============================================================
    ÖZEL SERİ KASA DEĞİŞİMİ — paketler.html
    ============================================================ */
-.kt-edition-sec { padding-top: 8px; }
+.kt-edition-sec { padding-top: 8px; scroll-margin-top: 160px; }
+.kt-shell-shortcut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 60px;
+  margin: 24px auto 0;
+  padding: 14px 22px;
+  border: 1px solid var(--kt-cyan);
+  border-radius: 14px;
+  background: var(--kt-blue-hi);
+  color: #061426;
+  text-decoration: none;
+  box-shadow: 0 8px 26px rgba(0, 168, 255, .2);
+}
+.kt-shell-shortcut > i { font-size: 24px; }
+.kt-shell-shortcut-title { font-size: 18px; font-weight: 800; }
+.kt-shell-shortcut-count {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: rgba(6, 20, 38, .1);
+  font-size: 12px;
+  vertical-align: middle;
+}
+.kt-shell-shortcut-action { font-size: 14px; font-weight: 700; }
+.kt-shell-shortcut:hover { background: var(--kt-cyan); color: #061426; }
+.kt-shell-shortcut:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+@media (max-width: 575px) {
+  .kt-shell-shortcut { gap: 8px 12px; padding: 12px 16px; }
+  .kt-shell-shortcut-title { font-size: 16px; }
+}
 .kt-ed-disclosure {
   margin: 0 0 22px;
   padding: 16px 20px;
